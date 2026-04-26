@@ -55,3 +55,8 @@ input{
   gap: 8px;
 }
 
+.evento{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

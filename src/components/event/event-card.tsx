@@ -29,7 +29,7 @@ function EventCard (){
 
                             <div className='data-info-group'>
                                 <img src={Local} />
-                                <p>Vila Olimpica</p>
+                                <p>Vila Olimpica</p> 
                             </div>
 
                             <div className='data-info-group'>
