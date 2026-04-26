@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+
+nav{
+    width: 100%;
+}
+
+.input{
+  font-weight:400;
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+input{
+  padding: 12px;
+  width: 378px;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid black;
+
+}
+
+.search {
+  position: relative;
+}
+
+.search input {
+  padding-left: 35px; /* espaço para a lupa */
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}
