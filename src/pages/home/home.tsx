@@ -1,6 +1,7 @@
 import './home.css'
 import Navbar from '../../components/navbar/navbar'
 import LupaIcon from '../../assets/icons/lupa.svg'
+import CardEvent from '../../components/event/event-card'
 
 function Home (){
     return (
@@ -23,7 +24,13 @@ function Home (){
                    
                 </div>
 
+                <div className='evento'>
+                    <CardEvent />
+                    <CardEvent />
+                    <CardEvent />
+                    <CardEvent />
 
+                </div>
                 
 
             </section>
