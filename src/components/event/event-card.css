@@ -54,7 +54,7 @@
 }
 
 .data-info-group{
-    height: auto;
+    height: 20px;
     color: #636363;
     font-weight: 400;
     font-size: 14px;
@@ -64,5 +64,6 @@
 
 .data-info-group img{
     position: relative;
-    top: 4px;
+    top: 1px;
 }
+

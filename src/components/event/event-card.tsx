@@ -46,4 +46,38 @@ function EventCard (){
     )
 }
 
+export function DataEvento(){
+    return( 
+        <>
+            <div className='data-info-group'>
+                <img src={Calendario} />
+                <p>30-Dec-2026, 18h</p>
+            </div>
+        </>    
+    )
+}
+
+export function LocalEvento(){
+    return (
+        <>
+            <div className='data-info-group'>
+                <img src={Local} />
+                <p>Vila Olimpica</p> 
+            </div> 
+        </>
+
+    )    
+}
+
+export function ImagemEvento(){
+    return (
+        <>
+            <div className='img-space'>
+                <img className='imagem-evento' src={EventImage}  />
+            </div>
+        </>
+
+    )    
+}
+
 export default EventCard

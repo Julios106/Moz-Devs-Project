@@ -1,0 +1,55 @@
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img-space{
+    width: 370px;
+    height: 172px;
+    background-color: #444;
+    border-radius: 16px;
+}
+.titulo{
+    font-size: 32px;
+    font-weight: 700;
+    width: 370px; 
+    height: auto;
+}
+
+.descricao-space{
+    width: 370px; 
+    height: auto;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.data-local{
+    width: 370px;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.convidado-Area{
+    width: 370px;
+    height: auto;
+    display: flex;
+    gap: 10px;
+}

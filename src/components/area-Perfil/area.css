@@ -1,0 +1,20 @@
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.foto{
+    width: 64px;
+    height: 64px;
+}
+.foto img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 1px solid #E7E7E7;
+}
