@@ -9,8 +9,9 @@ function Home (){
             <nav>
                 <Navbar />
             </nav>
-
             <br />
+            <br />
+    
 
             <section className='conteiner'>
                 <div className='input'>

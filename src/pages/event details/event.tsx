@@ -44,7 +44,6 @@ function Detalhes (){
                         <ImgArea image="1" nome='Maphorisa'/>
                         <ImgArea image="1" nome='Maphorisa'/>
                         <ImgArea image="1" nome='Maphorisa'/>
-                        <ImgArea image="1" nome='Maphorisa'/>
 
                     </div>
 
@@ -54,7 +53,6 @@ function Detalhes (){
 
                     <p style={{fontSize:"18px"}}>Convidados</p>
                     <div className='convidado-Area'>
-                        <ImgArea  image="2" nome='Vodacom'/>
                         <ImgArea  image="2" nome='Vodacom'/>
                         <ImgArea  image="2" nome='Vodacom'/>
                         <ImgArea  image="2" nome='Vodacom'/>
