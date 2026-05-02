@@ -1,0 +1,41 @@
+:root{
+    --navbar-altura:60px
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+section{
+    padding-top: var(--navbar-altura);
+}
+
+
+.conteiner{
+ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.descricao{
+    width: 370px;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+}

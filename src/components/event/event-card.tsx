@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import './event-card.css'
 import  EventImage from './assets/images/event.jpg'
 import  Calendario from './assets/icons/calendario.svg'
@@ -5,9 +6,13 @@ import Local from './assets/icons/local.svg'
 import Money from './assets/icons/money.svg'
 
 function EventCard (){
+    
+    const navigate = useNavigate()
+
+
     return (
         <>
-            <div className='event-conteiner'>
+            <div className='event-conteiner' onClick={() => navigate("/detalhes")}>
                 <div className='card'>
                     <div className='img-space'>
                         <img className='imagem-evento' src={EventImage}  />

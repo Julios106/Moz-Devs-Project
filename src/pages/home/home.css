@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+:root{
+  --navbar-altura:60px
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -14,6 +18,10 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
+}
+
+section{
+    padding-top: var(--navbar-altura);
 }
 
 .input{

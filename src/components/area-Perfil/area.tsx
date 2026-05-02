@@ -26,7 +26,7 @@ function Area ({nome,image}:props){
 
     return(
         <>
-            <div className='conteiner'>
+            <div className='conteinerArea'>
                 <div  className='foto'>
                      <img  src={imagem(image)} />
 

@@ -15,7 +15,7 @@ function Navbar(){
                 </div>
 
                 <div className='card-icons'>
-                    <a href="#">
+                    <a href="/perfil">
                         <img className='icons' src= {ProfileIcon}  />
                     </a>
 
@@ -23,7 +23,7 @@ function Navbar(){
                         <img className='icons' src= {BilheteIcon}  />
                     </a>
 
-                    <a href="#">
+                    <a href="/">
                         <img className='icons' src= {EventIcon}  />
                     </a>                      
 

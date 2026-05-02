@@ -14,7 +14,7 @@ function Detalhes (){
             <br />
 
             <section>
-                <div className='container'>
+                <div className='containerDetalhes'>
 
                     <div className='img-space'>
                         <ImagemEvento/>

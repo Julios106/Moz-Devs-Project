@@ -10,7 +10,7 @@ section{
     display: flex;
     flex-direction: column;
 }
-.container{
+.containerDetalhes{
     width: 100%;
     height: auto;
     padding: 16px;
