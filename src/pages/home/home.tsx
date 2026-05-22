@@ -1,9 +1,34 @@
 import './home.css'
+import {useState,useEffect} from 'react'
 import Navbar from '../../components/navbar/navbar'
 import LupaIcon from '../../assets/icons/lupa.svg'
 import CardEvent from '../../components/event/event-card'
+import api from '../../services/api'
 
 function Home (){
+
+    const [events,setEvents] = useState([])
+    const [loading,setLoading] = useState(true)
+
+    useEffect(()=>{
+        loadEvents()
+    },[])
+
+    const loadEvents = async()=>{
+        try{
+            setLoading(true)
+            const res = await api.getEventos();
+            setEvents(res.data || [])
+
+        }catch(err : any){
+            console.error(err)
+        }finally{
+            setLoading(false)
+        }
+    }
+    //
+
+
     return (
         <>
             <nav>
@@ -21,12 +46,28 @@ function Home (){
 
                    
                 </div>
+                
+                
 
                 <div className='evento'>
-                    <CardEvent />
-                    <CardEvent />
-                    <CardEvent />
-                    <CardEvent />
+
+                    {loading && <p>A carregar eventos...</p>}
+                    {
+                        events.map((data:any)=>{
+                            return(
+                                <CardEvent 
+                                    eventoName={data.nome}
+                                    local={data.local} 
+                                    data={data.data_evento} 
+                                    preco={data.preco} 
+                                    id={data._id}
+                                    />
+
+                            )
+                        })
+
+                    }
+                    
 
                 </div>
                 
