@@ -27,6 +27,7 @@ function Home (){
         }
     }
     //
+    //const isLoggedIn = !!localStorage.getItem('token');
 
 
     return (

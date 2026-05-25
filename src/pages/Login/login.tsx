@@ -22,7 +22,6 @@ function LoginPage() {
     setError('');
     try {
       await api.login(formData);
-      alert('login criado');
       navigate('/home'); // redireciona após sucesso
     }catch (err:any) {
       setError(err.message); // exibe erro ao utilizador

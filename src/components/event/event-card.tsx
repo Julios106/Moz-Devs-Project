@@ -22,7 +22,7 @@ function EventCard ({eventoName,local,data,preco,id}: props){
 
     return (
         <>
-            <div className='event-conteiner' onClick={() =>{navigate("/detalhes/"+id); console.log(id)} }>
+            <div className='event-conteiner' onClick={() =>{navigate("/detalhes/"+id);} }>
                 <div className='card'>
                     <div className='img-space'>
                         <img className='imagem-evento' src={EventImage}  />
@@ -61,28 +61,9 @@ function EventCard ({eventoName,local,data,preco,id}: props){
     )
 }
 
-export function DataEvento(){
-    return( 
-        <>
-            <div className='data-info-group'>
-                <img src={Calendario} />
-                <p>30-Dec-2026, 18h</p>
-            </div>
-        </>    
-    )
-}
 
-export function LocalEvento(){
-    return (
-        <>
-            <div className='data-info-group'>
-                <img src={Local} />
-                <p>Vila Olimpica</p> 
-            </div> 
-        </>
 
-    )    
-}
+
 
 export function ImagemEvento(){
     return (

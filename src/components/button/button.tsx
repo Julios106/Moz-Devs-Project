@@ -1,13 +1,19 @@
 import './button.css'
 
+
 type props={
-    texto: string
+    texto: string,
+    onClick?:()=>void
 }
 
-function Button ({texto}:props){
+function Button ({texto,onClick}:props){
     return (
         <>
-            <button type='submit' className='btn'>{texto}</button>
+            <button  type='submit' className='btn' onClick={onClick}>
+                
+                {texto}
+                
+                </button>
 
         </>
     )

@@ -10,7 +10,7 @@ export const api = {
             method:"POST",
             headers:{
                 'content-Type':'application/json'
-                //'authorizaction':`Bearer ${token}`
+                //'authorization':`Bearer ${token}`
             },
             body:JSON.stringify(credenciais)
         })
@@ -21,7 +21,7 @@ export const api = {
             throw new Error(data.message||"crefenciais invalidas") 
         }
 
-        localStorage.setItem(data.token,'token')
+        localStorage.setItem('token',data.token)
         return data;
 
     },
@@ -34,8 +34,8 @@ export const api = {
 
             method:'GET',
             headers:{
-                'content-Type':'application/json'
-                //'authorizaction':`Bearer ${getToken}`                 
+                'content-Type':'application/json',
+                'Authorization':`Bearer ${getToken}`                 
             }
         });
 
@@ -53,7 +53,7 @@ export const api = {
             method:'GET',
             headers:{
                 'content-Type':'application/json',
-                'authorizaction':`Bearer ${getToken}`                
+                'authorization':`Bearer ${getToken}`                
             }
         })
 
